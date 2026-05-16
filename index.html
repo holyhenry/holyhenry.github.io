@@ -110,16 +110,27 @@
     }
 
     .timeline-logo {
-      width: 90px;
-      height: 90px;
+      width: 72px;
+      height: 72px;
       object-fit: contain;
-      margin-bottom: 12px;
+      flex-shrink: 0;
     }
 
-    .timeline-card .role {
+    .timeline-text {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .timeline-text strong {
+      font-size: 17px;
+      line-height: 1.2;
+    }
+    
+    .timeline-text .role {
       font-size: 14px;
       color: var(--muted);
       margin-top: 6px;
+      line-height: 1.35;
     }
 
     .news {
@@ -238,33 +249,49 @@
     </header>
 
     <section class="timeline" aria-label="Education and experience timeline">
+      
       <article class="timeline-card">
         <img 
           src="images/uw-logo.png" 
           alt="University of Washington logo"
           class="timeline-logo"
         />
-        <strong>University of Washington</strong>
-        <div class="role">Ph.D. Mechanical Eng. - 2022-2026(expected)</div>
+        <div class="timeline-text">
+          <strong>University of Washington</strong>
+          <div class="role">
+            Ph.D. Mechanical Eng. - 2022-2026(expected)
+          </div>
+        </div>
       </article>
+      
       <article class="timeline-card">
         <img 
           src="images/boeing-logo.png" 
           alt="Boeing logo"
           class="timeline-logo"
         />
-        <strong>Boeing</strong>
-        <div class="role">Intelligent Automation Intern - Summer 2025</div>
+        <div class="timeline-text">
+          <strong>Boeing</strong>
+          <div class="role">
+            Intelligent Automation Intern - Summer 2025
+          </div>
+        </div>
       </article>
+      
       <article class="timeline-card">
         <img 
           src="images/pnnl-logo.png" 
           alt="PNNL logo"
           class="timeline-logo"
         />
-        <strong>Pacific Northwest National Laboratory (PNNL)</strong>
-        <div class="role">Robotics Research Intern - Summer 2024</div>
+        <div class="timeline-text">
+          <strong>Pacific Northwest National Laboratory (PNNL)</strong>
+          <div class="role">
+            Robotics Research Intern - Summer 2024
+          </div>
+        </div>
       </article>
+      
       <article class="timeline-card">
         <strong>ROS / C++ / JAX</strong>
         <div class="role">Systems stack</div>
